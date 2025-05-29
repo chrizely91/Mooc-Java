@@ -1,0 +1,15 @@
+
+import java.util.Scanner;
+
+public class IntegerInput {
+
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+            
+            System.out.println("Give a number:");
+            int number = Integer.valueOf(scanner.nextLine());
+
+            System.out.println("You gave the number " + number);
+        }
+    }
+}
